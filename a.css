@@ -7,56 +7,58 @@ body {
   color:#fff;
   margin: 0;
   padding: 0;
-  text-align: center;
+ /*  text-align: center;
+  justify-content: center; */
 }
 
 header {
   text-align: center;
   padding: 20px;
   background-color: #000;
+
 }
 
         
-.main {
+main {
   padding: 20px;
+  align-content: center;
+  width: 100%;
 }
 
         
 .about {
   color: #bbb;
   text-align: center;
+  margin: auto;
 }
 
         
 .gallery1 {
   display: flex;
-
   flex-direction: row;
-
   flex-wrap: wrap;
   justify-content:space-around ;
   gap: 10px;
-
   align-items: center;
+  margin: auto;
 }
 
 .gallery-item {
   width: 45%;
-  
   height: auto;
-
   float: left;
   margin: 10px;
-
   background-color: #000;
-
   padding: 10px;
   color: #fff;
   border-radius: 5px;
+  text-align: center;
 }
 
 .gallery-item img {
-  width: 40em;
+  width: 70%;
+  display: block;
+  margin: auto;
   height: auto;
   padding-top: 20px;
   border-radius: 50px;
@@ -66,6 +68,7 @@ header {
   color: #fff;
   padding: 3vh;
   margin-top: 20px;
+
 }
 
 footer {
@@ -94,17 +97,17 @@ h3 {
 }
 
 .bg-yellow {
-  background:url(./image1.jpg) center;
+  background:url(./images_jpg/palmiers.jpg)center;
   background-size: cover;
 }
 
 .bg-blue {
-  background:url(./image2.jpg) center;
+  background:url(./images_jpg/rocher.jpg) center;
   background-size: cover;
 }
 
 .bg-red {
-  background:url(./image3.jpg) center;
+  background:url(./images_jpg/mer.jpg) center;
   background-size: cover;
 }
 
@@ -266,4 +269,10 @@ color: #fff;
 /* Calculate AUTOPLAY for CAPTION - END */
   
   
-  
+  @media (min-width : 768px){
+    .header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
